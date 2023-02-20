@@ -22,7 +22,7 @@ jobs:
       run: |
         # conda env update --file python-package-conda.yml --name python_projects
         conda install pandas
-        conda install torch
+        conda install -c pytorch pytorch
         conda install torchvision
         conda install os
     - name: Lint with flake8
